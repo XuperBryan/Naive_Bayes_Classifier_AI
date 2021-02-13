@@ -1,0 +1,4 @@
+﻿sex,patient_type,entry_date,date_symptoms,date_died,intubed,pneumonia,age,pregnancy,diabetes,copd,asthma,inmsupr,hypertension,other_disease,cardiovascular,obesity,renal_chronic,tobacco,contact_other_covid,covid_res,icu
+1,1,22-06-2020,16-06-2020,9999-99-99,97,2,23,2,2,2,2,2,2,2,2,2,2,2,1,2,97
+2,1,18-06-2020,12/6/2020,9999-99-99,97,2,54,97,2,2,2,2,2,2,2,2,2,2,1,2,97
+2,2,14-04-2020,1/4/2020,17-04-2020,2,1,56,97,2,2,1,1,2,1,2,2,2,2,2,1,2

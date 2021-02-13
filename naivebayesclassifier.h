@@ -7,6 +7,7 @@
 #include <vector>
 #include <stdexcept>
 #include <sstream>
+#include <cmath>
 using namespace std;
 
 
@@ -14,7 +15,7 @@ class NaiveBayes {
     public:
         // counts all of the variables
         void countAllVariables(string filename);
-        
+        void printInfo();
         // returns 0 if survived, returns 1 if dead
         bool willDie(int sex, int type, int tubed, int pneumon, int age, int preg, int diabete, int copd, int asthma, int inmsupr, int hyper, int other, int cardio, int obese, int renal, int tobacco, int contact, int covres, int icu);
 
@@ -28,6 +29,9 @@ class NaiveBayes {
         // 3 in place for unknown
         double ageBound = 50;
         double totalCount = 108;
+        double dPercent = 0;
+        double aPercent = 0;
+        double tPercent = 0;
         double dCount = 54;
         double aCount = 54;
 
