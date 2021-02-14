@@ -15,9 +15,7 @@ void NaiveBayes::countAllVariables(string filename){
         stringstream ss(line);
 
         while(getline(ss, colname, ',')){
-            cout << colname << " ";
         }
-        cout << endl;
     }
 
     while(getline(myFile, line)){
@@ -634,7 +632,7 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
         probLive+=log(aicu3/aCount);
     }
     
-    cout << "probDie = " << probDie << ",probLive = " << probLive << endl;
+    // cout << "probDie = " << probDie << ",probLive = " << probLive << endl;
     if(probDie > probLive){
         return true;
     } else if(probDie < probLive){
@@ -645,7 +643,253 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
 }
 
 void NaiveBayes::printAllTestCases(string filename){
+    ifstream myFile(filename);
+    if(!myFile.is_open()){
+        throw runtime_error("Could not open file");
+    }
 
+    string line = "";
+    string colname = "";
+    string value = "";
+
+    if(myFile.good()){
+        getline(myFile, line);
+        stringstream ss(line);
+
+        while(getline(ss, colname, ',')){
+        }
+    }
+
+    while(getline(myFile, line)){
+        stringstream ss(line);
+        int index = 0;
+        int sex;
+        int type;
+        int tubed;
+        int pneumon;
+        int age;
+        int preg;
+        int diabete;
+        int copd;
+        int asthma;
+        int inmsupr;
+        int hyper;
+        int other;
+        int cardio;
+        int obese;
+        int renal;
+        int tobacco;
+        int contact;
+        int covres;
+        int icu;
+
+        while(getline(ss, value, ',')){
+            switch (index)  {
+                case 0:
+                    sex = stoi(value);
+                    break;
+                case 1:
+                    type = stoi(value);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    tubed = stoi(value);
+                    break;
+                case 6:
+                    pneumon = stoi(value);
+                    break;
+                case 7:
+                    age = stoi(value);
+                    break;
+                case 8:
+                    preg = stoi(value);
+                    break;
+                case 9:
+                    diabete = stoi(value);
+                    break;
+                case 10:
+                    copd = stoi(value);
+                    break;
+                case 11:
+                    asthma = stoi(value);
+                    break;
+                case 12:
+                    inmsupr = stoi(value);
+                    break;
+                case 13:
+                    hyper = stoi(value);
+                    break;
+                case 14:
+                    other = stoi(value);
+                    break;
+                case 15:
+                    cardio = stoi(value);
+                    break;
+                case 16:
+                    obese = stoi(value);
+                    break;
+                case 17:
+                    renal = stoi(value);
+                    break;
+                case 18:
+                    tobacco = stoi(value);
+                    break;
+                case 19:
+                    contact = stoi(value);
+                    break;
+                case 20:
+                    covres = stoi(value);
+                    break;
+                case 21:
+                    icu = stoi(value);
+                    break;
+                default:
+                    cout << "Messed up somewhere in the test calculations\n"; 
+                    break;
+            }
+            index++;
+        }
+        cout << willDie(sex, type, tubed, pneumon, age, preg, diabete, copd, asthma, inmsupr, hyper, other, cardio, obese, renal, tobacco, contact, covres, icu) << endl;
+
+    }
+    myFile.close();
+}
+
+double NaiveBayes::checkTestCases(string filename){
+    ifstream myFile(filename);
+    if(!myFile.is_open()){
+        throw runtime_error("Could not open file");
+    }
+
+    string line = "";
+    string colname = "";
+    string value = "";
+
+    if(myFile.good()){
+        getline(myFile, line);
+        stringstream ss(line);
+
+        while(getline(ss, colname, ',')){
+        }
+    }
+
+    double correct = 0;
+    double total = 0;
+    while(getline(myFile, line)){
+        stringstream ss(line);
+        int index = 0;
+        bool dead;
+        int sex;
+        int type;
+        int tubed;
+        int pneumon;
+        int age;
+        int preg;
+        int diabete;
+        int copd;
+        int asthma;
+        int inmsupr;
+        int hyper;
+        int other;
+        int cardio;
+        int obese;
+        int renal;
+        int tobacco;
+        int contact;
+        int covres;
+        int icu;
+
+        while(getline(ss, value, ',')){
+            switch (index)  {
+                case 0:
+                    sex = stoi(value);
+                    break;
+                case 1:
+                    type = stoi(value);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    if(value.compare("9999-99-99") == 0){
+                        bool dead = false;
+                    } else {
+                        bool dead = true;
+                    }
+                    break;
+                case 5:
+                    tubed = stoi(value);
+                    break;
+                case 6:
+                    pneumon = stoi(value);
+                    break;
+                case 7:
+                    age = stoi(value);
+                    break;
+                case 8:
+                    preg = stoi(value);
+                    break;
+                case 9:
+                    diabete = stoi(value);
+                    break;
+                case 10:
+                    copd = stoi(value);
+                    break;
+                case 11:
+                    asthma = stoi(value);
+                    break;
+                case 12:
+                    inmsupr = stoi(value);
+                    break;
+                case 13:
+                    hyper = stoi(value);
+                    break;
+                case 14:
+                    other = stoi(value);
+                    break;
+                case 15:
+                    cardio = stoi(value);
+                    break;
+                case 16:
+                    obese = stoi(value);
+                    break;
+                case 17:
+                    renal = stoi(value);
+                    break;
+                case 18:
+                    tobacco = stoi(value);
+                    break;
+                case 19:
+                    contact = stoi(value);
+                    break;
+                case 20:
+                    covres = stoi(value);
+                    break;
+                case 21:
+                    icu = stoi(value);
+                    break;
+                default:
+                    cout << "Messed up somewhere in the test calculations\n"; 
+                    break;
+            }
+            index++;
+        }
+        if(dead != willDie(sex, type, tubed, pneumon, age, preg, diabete, copd, asthma, inmsupr, hyper, other, cardio, obese, renal, tobacco, contact, covres, icu)){
+            correct++;
+        }
+        total++;
+
+    }
+    cout << "Percentage correct: " << correct/total << endl;
+    cout << "Number correct: " << correct << endl;
+    cout << "Number checked: " << total << endl;
+    myFile.close();
 }
 
 void NaiveBayes::printInfo(){
@@ -664,6 +908,7 @@ int main(int argc, char* argv[]){
     NaiveBayes nb = NaiveBayes();
     nb.countAllVariables(trainingData);
     //nb.printInfo();
-    cout << nb.willDie(1, 1, 97, 2, 23, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 97) << endl;
+    nb.printAllTestCases(testingData);
+    // nb.checkTestCases(testingData);
     return 0;
 }

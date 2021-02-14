@@ -21,6 +21,7 @@ class NaiveBayes {
 
         // calculates all possibilities and prints 0 or 1
         void printAllTestCases(string filename);
+        double checkTestCases(string filename);
     private:
         // d stands for dead
         // a stands for alive
