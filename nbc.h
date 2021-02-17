@@ -173,6 +173,7 @@ using namespace std;
 // covres2.5: .877555
 // covres2.9: .87801
 // covres3: .87813
+// covres3.25: .87760
 // covres3.5: .87753
 // covres4: .87676
 
