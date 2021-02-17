@@ -510,25 +510,25 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     }
 
     if(asthma==1){
-        probDie+=3*log(dasthma1/dCount);
-        probLive+=3*log(aasthma1/aCount);
+        probDie+=log(dasthma1/dCount);
+        probLive+=log(aasthma1/aCount);
     } else if(asthma==2){
-        probDie+=3*log(dasthma2/dCount);
-        probLive+=3*log(aasthma2/aCount);
+        probDie+=log(dasthma2/dCount);
+        probLive+=log(aasthma2/aCount);
     } else {
-        probDie+=3*log(dasthma3/dCount);
-        probLive+=3*log(aasthma3/aCount);
+        probDie+=log(dasthma3/dCount);
+        probLive+=log(aasthma3/aCount);
     }
     
     if(inmsupr==1){
-        probDie+=log(dinmsupr1/dCount);
-        probLive+=log(ainmsupr1/aCount);
+        probDie+=1.5*log(dinmsupr1/dCount);
+        probLive+=1.5*log(ainmsupr1/aCount);
     } else if(inmsupr==2){
-        probDie+=log(dinmsupr2/dCount);
-        probLive+=log(ainmsupr2/aCount);
+        probDie+=1.5*log(dinmsupr2/dCount);
+        probLive+=1.5*log(ainmsupr2/aCount);
     } else {
-        probDie+=log(dinmsupr3/dCount);
-        probLive+=log(ainmsupr3/aCount);
+        probDie+=1.5*log(dinmsupr3/dCount);
+        probLive+=1.5*log(ainmsupr3/aCount);
     }
     
     if(hyper==1){
