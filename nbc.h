@@ -27,6 +27,7 @@ using namespace std;
 // copd, 2.0 = .8702
 // copd, 3.0 = .8700
 // copd, 4.0 = .8700
+// hyper, 1.2 = .8703
 // hyper, 1.5 = .8704
 // hyper, 2.0 = .8703
 
