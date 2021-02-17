@@ -10,7 +10,10 @@
 #include <cmath>
 using namespace std;
 
-// age, 1.5 = .8714 
+// age, 1.5 = .8714
+// age, 2.0 = .8719
+
+
 class NaiveBayes {
     public:
         // counts all of the variables
