@@ -112,7 +112,7 @@ using namespace std;
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, pneumon0.5: .8744
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, pneumon2: .8759
 
-// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, !preg: .8772
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, !preg: .8765
 
 
 
