@@ -431,11 +431,11 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     probLive+=log(aPercent/tPercent);
 
     if(sex==1){
-        probDie+=log(dsex1/dCount);
-        probLive+=log(asex1/aCount);
+        probDie+=1.5*log(dsex1/dCount);
+        probLive+=1.5*log(asex1/aCount);
     } else if(sex==2){
-        probDie+=log(dsex2/dCount);
-        probLive+=log(asex2/aCount);
+        probDie+=1.5*log(dsex2/dCount);
+        probLive+=1.5*log(asex2/aCount);
     } 
 
     if(type==1){
@@ -599,14 +599,14 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     
     
     if(contact==1){
-        probDie+=1.75*log(dcontact1/dCount);
-        probLive+=1.75*log(acontact1/aCount);
+        probDie+=2*log(dcontact1/dCount);
+        probLive+=2*log(acontact1/aCount);
     } else if(contact==2){
-        probDie+=1.75*log(dcontact2/dCount);
-        probLive+=1.75*log(acontact2/aCount);
+        probDie+=2*log(dcontact2/dCount);
+        probLive+=2*log(acontact2/aCount);
     } else {
-        probDie+=1.75*log(dcontact3/dCount);
-        probLive+=1.75*log(acontact3/aCount);
+        probDie+=2*log(dcontact3/dCount);
+        probLive+=2*log(acontact3/aCount);
     }
     
     if(covres==1){
