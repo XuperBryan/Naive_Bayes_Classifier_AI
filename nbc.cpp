@@ -543,14 +543,14 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     }
     
     if(other==1){
-        probDie+=.5*log(dother1/dCount);
-        probLive+=.5*log(aother1/aCount);
+        probDie+=.25*log(dother1/dCount);
+        probLive+=.25*log(aother1/aCount);
     } else if(other==2){
-        probDie+=.5*log(dother2/dCount);
-        probLive+=.5*log(aother2/aCount);
+        probDie+=.25*log(dother2/dCount);
+        probLive+=.25*log(aother2/aCount);
     } else {
-        probDie+=.5*log(dother3/dCount);
-        probLive+=.5*log(aother3/aCount);
+        probDie+=.25*log(dother3/dCount);
+        probLive+=.25*log(aother3/aCount);
     }
     
     // if(cardio==1){
