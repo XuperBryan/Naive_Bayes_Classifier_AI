@@ -47,11 +47,15 @@ using namespace std;
 // covres --
 // icu --
 
-// age = 3, diabete = 2: .8753
+// age = 3, diabete = 2: .8746
 // age = 3, diabete = 3: .8753
 // age = 3, diabete = 4: .8735
 // age = 3, diabete = 5: .8680
 
+// age = 3, diabete = 5: .8680
+// age = 3, diabete = 5: .8680
+// age = 3, diabete = 5: .8680
+// age = 3, diabete = 5: .8680
 
 class NaiveBayes {
     public:
