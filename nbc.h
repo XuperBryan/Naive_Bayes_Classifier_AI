@@ -142,7 +142,9 @@ using namespace std;
 
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, !obese: .8765
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese0.5: .8771
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese1.25: .8775
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese1.5: .8775
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese2: .8771
 
 
 
