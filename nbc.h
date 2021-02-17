@@ -63,7 +63,7 @@ using namespace std;
 // age = 3, diabete = 3, !sex: .8750
 
 // age = 3, diabete = 3, !cardio: .8757
-// age = 3, diabete = 3, !cardio: .8757
+// age = 3, diabete = 4, !cardio: .8737
 
 
 class NaiveBayes {
