@@ -565,26 +565,26 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     // }
     
     if(obese==1){
-        probDie+=1.65*log(dobese1/dCount);
-        probLive+=1.65*log(aobese1/aCount);
+        probDie+=1.5*log(dobese1/dCount);
+        probLive+=1.5*log(aobese1/aCount);
     } else if(obese==2){
-        probDie+=1.65*log(dobese2/dCount);
-        probLive+=1.65*log(aobese2/aCount);
+        probDie+=1.5*log(dobese2/dCount);
+        probLive+=1.5*log(aobese2/aCount);
     } else {
-        probDie+=1.65*log(dobese3/dCount);
-        probLive+=1.65*log(aobese3/aCount);
+        probDie+=1.5*log(dobese3/dCount);
+        probLive+=1.5*log(aobese3/aCount);
     }
     
-    if(renal==1){
-        probDie+=log(drenal1/dCount);
-        probLive+=log(arenal1/aCount);
-    } else if(renal==2){
-        probDie+=log(drenal2/dCount);
-        probLive+=log(arenal2/aCount);
-    } else {
-        probDie+=log(drenal3/dCount);
-        probLive+=log(arenal3/aCount);
-    }
+    // if(renal==1){
+    //     probDie+=log(drenal1/dCount);
+    //     probLive+=log(arenal1/aCount);
+    // } else if(renal==2){
+    //     probDie+=log(drenal2/dCount);
+    //     probLive+=log(arenal2/aCount);
+    // } else {
+    //     probDie+=log(drenal3/dCount);
+    //     probLive+=log(arenal3/aCount);
+    // }
     
     if(tobacco==1){
         probDie+=log(dtobacco1/dCount);
