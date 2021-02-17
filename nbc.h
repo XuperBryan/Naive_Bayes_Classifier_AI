@@ -73,8 +73,8 @@ using namespace std;
 // age = 3, diabete = 3, !cardio: .8757
 // age = 3, diabete = 3, !other: .8756
 // age = 3, diabete = 3, !hyper: .8752
-// age = 3, diabete = 3, !inmsupr: .8
-// age = 3, diabete = 3, !cardio: .8
+// age = 3, diabete = 3, !inmsupr: .8755
+// age = 3, diabete = 3, !asthma: .8
 // age = 3, diabete = 3, !cardio: .8
 
 
