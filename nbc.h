@@ -34,6 +34,7 @@ using namespace std;
 // cardio, 2.0 = .8699
 // obese, 1.5 = .8701
 // obese, 2.0 = .8701
+// obese, 3.0 = .8697
 
 
 
