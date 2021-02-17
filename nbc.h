@@ -10,10 +10,11 @@
 #include <cmath>
 using namespace std;
 
-// age, 1.5 = .8714
-// age, 2.0 = .8719
-// age, 3.0 = .8742
-// age, 3.0 = .8742
+// age, 1.5, 50 = .8714
+// age, 2.0, 50 = .8719
+// age, 3.0, 50 = .8742
+// age, 3.5, 50 = .8742
+// age, 4.0, 50 = .8725
 
 
 class NaiveBayes {
