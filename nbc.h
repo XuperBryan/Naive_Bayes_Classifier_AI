@@ -23,29 +23,7 @@ using namespace std;
 // diabete, 4.5 = .8734
 // diabete, 5.0 = .8741
 // diabete, 6.0 = .8719
-// copd, 1.5 = .8700
-// copd, 2.0 = .8702
-// copd, 3.0 = .8700
-// copd, 4.0 = .8700
-// hyper, 1.2 = .8703
-// hyper, 1.5 = .8704
-// hyper, 2.0 = .8703
-// cardio, 1.5 = .8701
-// cardio, 2.0 = .8699
-// obese, 1.5 = .8701
-// obese, 2.0 = .8701
-// obese, 3.0 = .8697
-// renal, 1.5 = .8702
-// renal, 2.0 = .8703
-// renal, 2.5 = .8703
-// renal, 3.0 = .8703
-// renal, 4.0 = .8702
-// tobacco --
-// contact, 1.5 = .8708
-// contact, 2.0 = .8705
-// contact, 3.0 = .8685
-// covres --
-// icu --
+
 
 // age = 3, diabete = 2: .8746
 // age = 3, diabete = 3: .8753
@@ -82,8 +60,10 @@ using namespace std;
 // age = 3, diabete = 3, !pneumon: .8650
 // age = 3, diabete = 3, !tubed: .8646
 // age = 3, diabete = 3, !type: .8669
-// age = 3, diabete = 3, !sex: .8
+// age = 3, diabete = 3, !sex: .8750
 
+// age = 3, diabete = 3, !cardio: .8757
+// age = 3, diabete = 3, !cardio: .8757
 
 
 class NaiveBayes {

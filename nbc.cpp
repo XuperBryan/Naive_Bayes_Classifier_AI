@@ -430,13 +430,13 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     probDie+=log(dPercent/tPercent);
     probLive+=log(aPercent/tPercent);
 
-    // if(sex==1){
-    //     probDie+=log(dsex1/dCount);
-    //     probLive+=log(asex1/aCount);
-    // } else if(sex==2){
-    //     probDie+=log(dsex2/dCount);
-    //     probLive+=log(asex2/aCount);
-    // } 
+    if(sex==1){
+        probDie+=log(dsex1/dCount);
+        probLive+=log(asex1/aCount);
+    } else if(sex==2){
+        probDie+=log(dsex2/dCount);
+        probLive+=log(asex2/aCount);
+    } 
 
     if(type==1){
         probDie+=log(dtype1/dCount);
@@ -488,14 +488,14 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     }
     
     if(diabete==1){
-        probDie+=3*log(ddiabete1/dCount);
-        probLive+=3*log(adiabete1/aCount);
+        probDie+=4*log(ddiabete1/dCount);
+        probLive+=4*log(adiabete1/aCount);
     } else if(diabete==2){
-        probDie+=3*log(ddiabete2/dCount);
-        probLive+=3*log(adiabete2/aCount);
+        probDie+=4*log(ddiabete2/dCount);
+        probLive+=4*log(adiabete2/aCount);
     } else {
-        probDie+=3*log(ddiabete3/dCount);
-        probLive+=3*log(adiabete3/aCount);
+        probDie+=4*log(ddiabete3/dCount);
+        probLive+=4*log(adiabete3/aCount);
     }
     
     if(copd==1){
@@ -553,16 +553,16 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
         probLive+=log(aother3/aCount);
     }
     
-    if(cardio==1){
-        probDie+=log(dcardio1/dCount);
-        probLive+=log(acardio1/aCount);
-    } else if(cardio==2){
-        probDie+=log(dcardio2/dCount);
-        probLive+=log(acardio2/aCount);
-    } else {
-        probDie+=log(dcardio3/dCount);
-        probLive+=log(acardio3/aCount);
-    }
+    // if(cardio==1){
+    //     probDie+=log(dcardio1/dCount);
+    //     probLive+=log(acardio1/aCount);
+    // } else if(cardio==2){
+    //     probDie+=log(dcardio2/dCount);
+    //     probLive+=log(acardio2/aCount);
+    // } else {
+    //     probDie+=log(dcardio3/dCount);
+    //     probLive+=log(acardio3/aCount);
+    // }
     
     if(obese==1){
         probDie+=log(dobese1/dCount);
