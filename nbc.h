@@ -54,9 +54,9 @@ using namespace std;
 
 // age = 2, diabete = 5: .8743
 // age = 3, diabete = 5: .8680
-// age = 3, diabete = 5: .8680
-// age = 3, diabete = 5: .8680
+// age = 4, diabete = 5: .8598
 
+// ageBound = 6, age = 3, diabete = 3: 
 class NaiveBayes {
     public:
         // counts all of the variables
@@ -74,7 +74,7 @@ class NaiveBayes {
         // 1 in place for 1
         // 2 in place for 2
         // 3 in place for unknown
-        double ageBound = 50;
+        double ageBound = 60;
         double totalCount = 108;
         double dPercent = 0;
         double aPercent = 0;
