@@ -161,9 +161,12 @@ using namespace std;
 // tobacco0.5: .87760
 // tobacco1.25: .87755
 // tobacco1.5: .87763
+// tobacco1.65: .87763
 // tobacco1.75: .87763
 // tobacco2: .87753
 
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese1.5, renal0.5, tobacco1.5: .87763
+// 
 
 class NaiveBayes {
     public:
