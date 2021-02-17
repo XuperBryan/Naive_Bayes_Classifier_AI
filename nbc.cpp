@@ -509,16 +509,16 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     //     probLive+=log(acopd3/aCount);
     // }
 
-    if(asthma==1){
-        probDie+=log(dasthma1/dCount);
-        probLive+=log(aasthma1/aCount);
-    } else if(asthma==2){
-        probDie+=log(dasthma2/dCount);
-        probLive+=log(aasthma2/aCount);
-    } else {
-        probDie+=log(dasthma3/dCount);
-        probLive+=log(aasthma3/aCount);
-    }
+    // if(asthma==1){
+    //     probDie+=log(dasthma1/dCount);
+    //     probLive+=log(aasthma1/aCount);
+    // } else if(asthma==2){
+    //     probDie+=log(dasthma2/dCount);
+    //     probLive+=log(aasthma2/aCount);
+    // } else {
+    //     probDie+=log(dasthma3/dCount);
+    //     probLive+=log(aasthma3/aCount);
+    // }
     
     if(inmsupr==1){
         probDie+=log(dinmsupr1/dCount);
@@ -542,16 +542,16 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
         probLive+=log(ahyper3/aCount);
     }
     
-    // if(other==1){
-    //     probDie+=log(dother1/dCount);
-    //     probLive+=log(aother1/aCount);
-    // } else if(other==2){
-    //     probDie+=log(dother2/dCount);
-    //     probLive+=log(aother2/aCount);
-    // } else {
-    //     probDie+=log(dother3/dCount);
-    //     probLive+=log(aother3/aCount);
-    // }
+    if(other==1){
+        probDie+=log(dother1/dCount);
+        probLive+=log(aother1/aCount);
+    } else if(other==2){
+        probDie+=log(dother2/dCount);
+        probLive+=log(aother2/aCount);
+    } else {
+        probDie+=log(dother3/dCount);
+        probLive+=log(aother3/aCount);
+    }
     
     // if(cardio==1){
     //     probDie+=log(dcardio1/dCount);
