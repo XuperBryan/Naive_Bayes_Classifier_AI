@@ -173,9 +173,14 @@ using namespace std;
 // covres2.5: .877555
 // covres2.9: .87801
 // covres3: .87813
+// covres3.1: .87808
 // covres3.25: .87760
 // covres3.5: .87753
 // covres4: .87676
+
+
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese1.5, renal0.5, tobacco1.5, covres3: .87813
+// !icu
 
 class NaiveBayes {
     public:
