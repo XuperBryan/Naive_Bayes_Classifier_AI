@@ -114,7 +114,6 @@ void NaiveBayes::countAllVariables(string filename){
                 case 21: // icu
                     break; 
                 default:
-                    cout << "You messed up somewhere, and ended up in the default case" << endl;
                     break; 
             }
             index++;        
@@ -138,8 +137,8 @@ bool NaiveBayes::willDie(int tubed, int age){
         probDie+=log(dtubed2/dCount);
         probLive+=log(atubed2/aCount);
     } else {
-        probDie+=log(dtubed3/dCount);
-        probLive+=log(atubed3/aCount);
+        probDie+=log(dtubed1/dCount);
+        probLive+=log(atubed1/aCount);
     }
 
     if(age <= ageBound){
@@ -233,7 +232,6 @@ void NaiveBayes::printAllTestCases(string filename){
                 case 21:
                     break;
                 default:
-                    cout << "Messed up somewhere in the test calculations\n"; 
                     break;
             }
             index++;
@@ -324,7 +322,6 @@ double NaiveBayes::checkTestCases(string filename){
                 case 21:
                     break;
                 default:
-                    cout << "Messed up somewhere in the test calculations\n"; 
                     break;
             }
             index++;
