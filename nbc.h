@@ -35,6 +35,8 @@ using namespace std;
 // obese, 1.5 = .8701
 // obese, 2.0 = .8701
 // obese, 3.0 = .8697
+// renal, 1.5 = .8702
+// renal, 2.0 = .8702
 
 
 
