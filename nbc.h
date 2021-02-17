@@ -151,8 +151,8 @@ using namespace std;
 
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese1.5: .8775
 // !renal: .8773
-// renal0.5: .8775
-// renal0.75: .8775
+// renal0.5: .87758
+// renal0.75: .87755
 // renal1.5: .8771
 
 
