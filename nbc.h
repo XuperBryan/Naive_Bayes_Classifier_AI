@@ -16,7 +16,9 @@ using namespace std;
 // age, 3.3, 50 = .8733
 // age, 3.5, 50 = .8734
 // age, 4.0, 50 = .8725
-// diabete, 1.5, 50 = .8703
+// diabete, 1.5 = .8703
+// diabete, 2.0 = .8706
+// diabete, 2.0 = .8706
 
 
 class NaiveBayes {
