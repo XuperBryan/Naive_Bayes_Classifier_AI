@@ -21,7 +21,7 @@ using namespace std;
 // diabete, 3.0 = .8711
 // diabete, 4.0 = .8735
 // diabete, 5.0 = .8741
-// diabete, 6.0 = .8741
+// diabete, 6.0 = .8719
 
 
 class NaiveBayes {
