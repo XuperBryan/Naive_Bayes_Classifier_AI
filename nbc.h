@@ -92,6 +92,7 @@ using namespace std;
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.15: .8757
 
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type: .8759
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, type1.5: .8749
 
 
 
