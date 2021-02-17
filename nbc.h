@@ -67,7 +67,7 @@ using namespace std;
 // age = 3, diabete = 4, !cardio: .8737
 // age = 3, diabete = 5, !cardio: .8689
 
-// age = 2, diabete = 3, !cardio: .8
+// age = 2, diabete = 3, !cardio: .8752
 // age = 3, diabete = 3, !cardio: .8757
 // age = 4, diabete = 3, !cardio: .8
 // age = 5, diabete = 3, !cardio: .8
