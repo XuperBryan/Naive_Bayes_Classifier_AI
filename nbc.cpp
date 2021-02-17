@@ -469,22 +469,22 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     }
     
     if(age <= ageBound){
-        probDie+=3.3*log(dbelowAge/dCount);
-        probLive+=3.3*log(abelowAge/aCount);
+        probDie+=log(dbelowAge/dCount);
+        probLive+=log(abelowAge/aCount);
     } else {
-        probDie+=3.3*log(daboveAge/dCount);
-        probLive+=3.3*log(aaboveAge/aCount);
+        probDie+=log(daboveAge/dCount);
+        probLive+=log(aaboveAge/aCount);
     }
 
     if(preg==1){
-        probDie+=log(dpreg1/dCount);
-        probLive+=log(apreg1/aCount);
+        probDie+=1.5*log(dpreg1/dCount);
+        probLive+=1.5*log(apreg1/aCount);
     } else if(preg==2){
-        probDie+=log(dpreg2/dCount);
-        probLive+=log(apreg2/aCount);
+        probDie+=1.5*log(dpreg2/dCount);
+        probLive+=1.5*log(apreg2/aCount);
     } else {
-        probDie+=log(dpreg3/dCount);
-        probLive+=log(apreg3/aCount);
+        probDie+=1.5*log(dpreg3/dCount);
+        probLive+=1.5*log(apreg3/aCount);
     }
     
     if(diabete==1){
