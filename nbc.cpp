@@ -447,26 +447,26 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     // } 
 
     if(tubed==1){
-        probDie+=2.25*log(dtubed1/dCount);
-        probLive+=2.25*log(atubed1/aCount);
+        probDie+=2.2*log(dtubed1/dCount);
+        probLive+=2.2*log(atubed1/aCount);
     } else if(tubed==2){
-        probDie+=2.25*log(dtubed2/dCount);
-        probLive+=2.25*log(atubed2/aCount);
+        probDie+=2.2*log(dtubed2/dCount);
+        probLive+=2.2*log(atubed2/aCount);
     } else {
-        probDie+=2.25*log(dtubed3/dCount);
-        probLive+=2.25*log(atubed3/aCount);
+        probDie+=2.2*log(dtubed3/dCount);
+        probLive+=2.2*log(atubed3/aCount);
     }
 
-    if(pneumon==1){
-        probDie+=log(dpneumon1/dCount);
-        probLive+=log(apneumon1/aCount);
-    } else if(pneumon==2){
-        probDie+=log(dpneumon2/dCount);
-        probLive+=log(apneumon2/aCount);
-    } else {
-        probDie+=log(dpneumon3/dCount);
-        probLive+=log(apneumon3/aCount);
-    }
+    // if(pneumon==1){
+    //     probDie+=log(dpneumon1/dCount);
+    //     probLive+=log(apneumon1/aCount);
+    // } else if(pneumon==2){
+    //     probDie+=log(dpneumon2/dCount);
+    //     probLive+=log(apneumon2/aCount);
+    // } else {
+    //     probDie+=log(dpneumon3/dCount);
+    //     probLive+=log(apneumon3/aCount);
+    // }
     
     if(age <= ageBound){
         probDie+=3*log(dbelowAge/dCount);
