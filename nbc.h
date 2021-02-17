@@ -12,6 +12,8 @@ using namespace std;
 
 // age, 1.5 = .8714
 // age, 2.0 = .8719
+// age, 3.0 = .8742
+// age, 3.0 = .8742
 
 
 class NaiveBayes {
