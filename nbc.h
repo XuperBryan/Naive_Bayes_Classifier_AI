@@ -171,6 +171,7 @@ using namespace std;
 // covres1.5: .87709
 // covres2: .87722
 // covres3: .87813
+// covres4: .87676
 
 class NaiveBayes {
     public:
