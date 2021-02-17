@@ -78,8 +78,8 @@ using namespace std;
 // age = 3, diabete = 3, !copd: .8755
 // age = 3, diabete = 3, !diabete: .8729
 // age = 3, diabete = 3, !preg: .8752
-// age = 3, diabete = 3, !age: .8
-// age = 3, diabete = 3, !cardio: .8
+// age = 3, diabete = 3, !age: .8654
+// age = 3, diabete = 3, !pneumon: .8
 // age = 3, diabete = 3, !cardio: .8
 
 
