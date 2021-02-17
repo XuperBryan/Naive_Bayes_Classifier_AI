@@ -183,6 +183,7 @@ using namespace std;
 // !icu: .87440
 // icu.5: .87714
 // icu1.5: .87722
+// icu2: .87501
 
 class NaiveBayes {
     public:
