@@ -110,6 +110,14 @@ using namespace std;
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, !pneumon: .8700
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, pneumon1.5: .8766
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, pneumon0.5: .8744
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, pneumon2: .8759
+
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, !preg: .8772
+
+
+
+
+
 class NaiveBayes {
     public:
         // counts all of the variables

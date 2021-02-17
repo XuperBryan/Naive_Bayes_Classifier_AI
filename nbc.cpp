@@ -458,14 +458,14 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     }
 
     if(pneumon==1){
-        probDie+=2*log(dpneumon1/dCount);
-        probLive+=2*log(apneumon1/aCount);
+        probDie+=log(dpneumon1/dCount);
+        probLive+=log(apneumon1/aCount);
     } else if(pneumon==2){
-        probDie+=2*log(dpneumon2/dCount);
-        probLive+=2*log(apneumon2/aCount);
+        probDie+=log(dpneumon2/dCount);
+        probLive+=log(apneumon2/aCount);
     } else {
-        probDie+=2*log(dpneumon3/dCount);
-        probLive+=2*log(apneumon3/aCount);
+        probDie+=log(dpneumon3/dCount);
+        probLive+=log(apneumon3/aCount);
     }
     
     if(age <= ageBound){
@@ -476,16 +476,16 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
         probLive+=3*log(aaboveAge/aCount);
     }
 
-    if(preg==1){
-        probDie+=log(dpreg1/dCount);
-        probLive+=log(apreg1/aCount);
-    } else if(preg==2){
-        probDie+=log(dpreg2/dCount);
-        probLive+=log(apreg2/aCount);
-    } else {
-        probDie+=log(dpreg3/dCount);
-        probLive+=log(apreg3/aCount);
-    }
+    // if(preg==1){
+    //     probDie+=log(dpreg1/dCount);
+    //     probLive+=log(apreg1/aCount);
+    // } else if(preg==2){
+    //     probDie+=log(dpreg2/dCount);
+    //     probLive+=log(apreg2/aCount);
+    // } else {
+    //     probDie+=log(dpreg3/dCount);
+    //     probLive+=log(apreg3/aCount);
+    // }
     
     if(diabete==1){
         probDie+=3*log(ddiabete1/dCount);
