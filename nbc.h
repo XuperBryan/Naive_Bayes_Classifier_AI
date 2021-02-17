@@ -52,7 +52,7 @@ using namespace std;
 // age = 3, diabete = 4: .8735
 // age = 3, diabete = 5: .8680
 
-// age = 2, diabete = 5: .8680
+// age = 2, diabete = 5: .8743
 // age = 3, diabete = 5: .8680
 // age = 3, diabete = 5: .8680
 // age = 3, diabete = 5: .8680
