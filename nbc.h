@@ -81,6 +81,7 @@ using namespace std;
 
 // age = 3, diabete = 3, !cardio, !copd, !asthma, contact = 1.5: .8756
 // age = 3, diabete = 3, !cardio, !copd, !asthma, contact = 2.0: .8759
+// age = 3, diabete = 3, !cardio, !copd, !asthma, contact = 3.0: .8753
 
 
 
