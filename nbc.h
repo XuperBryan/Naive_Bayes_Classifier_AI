@@ -181,7 +181,8 @@ using namespace std;
 
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese1.5, renal0.5, tobacco1.5, covres3: .87813
 // !icu: .87440
-// !icu: .87440
+// icu.5: .87714
+// icu.5: .87714
 
 class NaiveBayes {
     public:
