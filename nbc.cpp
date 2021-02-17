@@ -499,25 +499,25 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     }
     
     if(copd==1){
-        probDie+=3*log(dcopd1/dCount);
-        probLive+=3*log(acopd1/aCount);
+        probDie+=log(dcopd1/dCount);
+        probLive+=log(acopd1/aCount);
     } else if(copd==2){
-        probDie+=3*log(dcopd2/dCount);
-        probLive+=3*log(acopd2/aCount);
+        probDie+=log(dcopd2/dCount);
+        probLive+=log(acopd2/aCount);
     } else {
-        probDie+=3*log(dcopd3/dCount);
-        probLive+=3*log(acopd3/aCount);
+        probDie+=log(dcopd3/dCount);
+        probLive+=log(acopd3/aCount);
     }
 
     if(asthma==1){
-        probDie+=log(dasthma1/dCount);
-        probLive+=log(aasthma1/aCount);
+        probDie+=1.5*log(dasthma1/dCount);
+        probLive+=1.5*log(aasthma1/aCount);
     } else if(asthma==2){
-        probDie+=log(dasthma2/dCount);
-        probLive+=log(aasthma2/aCount);
+        probDie+=1.5*log(dasthma2/dCount);
+        probLive+=1.5*log(aasthma2/aCount);
     } else {
-        probDie+=log(dasthma3/dCount);
-        probLive+=log(aasthma3/aCount);
+        probDie+=1.5*log(dasthma3/dCount);
+        probLive+=1.5*log(aasthma3/aCount);
     }
     
     if(inmsupr==1){
