@@ -438,24 +438,24 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
         probLive+=log(asex2/aCount);
     } 
 
-    if(type==1){
-        probDie+=log(dtype1/dCount);
-        probLive+=log(atype1/aCount);
-    } else if(type==2){
-        probDie+=log(dtype2/dCount);
-        probLive+=log(atype2/aCount);
-    } 
+    // if(type==1){
+    //     probDie+=log(dtype1/dCount);
+    //     probLive+=log(atype1/aCount);
+    // } else if(type==2){
+    //     probDie+=log(dtype2/dCount);
+    //     probLive+=log(atype2/aCount);
+    // } 
 
-    // if(tubed==1){
-    //     probDie+=log(dtubed1/dCount);
-    //     probLive+=log(atubed1/aCount);
-    // } else if(tubed==2){
-    //     probDie+=log(dtubed2/dCount);
-    //     probLive+=log(atubed2/aCount);
-    // } else {
-    //     probDie+=log(dtubed3/dCount);
-    //     probLive+=log(atubed3/aCount);
-    // }
+    if(tubed==1){
+        probDie+=log(dtubed1/dCount);
+        probLive+=log(atubed1/aCount);
+    } else if(tubed==2){
+        probDie+=log(dtubed2/dCount);
+        probLive+=log(atubed2/aCount);
+    } else {
+        probDie+=log(dtubed3/dCount);
+        probLive+=log(atubed3/aCount);
+    }
 
     if(pneumon==1){
         probDie+=log(dpneumon1/dCount);
