@@ -30,6 +30,8 @@ using namespace std;
 // hyper, 1.2 = .8703
 // hyper, 1.5 = .8704
 // hyper, 2.0 = .8703
+// cardio, 1.5 = .8701
+// cardio, 2.0 = .8699
 
 
 class NaiveBayes {
