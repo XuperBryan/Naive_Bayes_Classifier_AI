@@ -60,6 +60,8 @@ using namespace std;
 // ageBound = 50, age = 3, diabete = 3: .8753
 // ageBound = 60, age = 3, diabete = 3: .8753
 // ageBound = 65, age = 3, diabete = 3: .8753
+
+// age = 3, diabete = 3, contact = 1.5: 
 class NaiveBayes {
     public:
         // counts all of the variables
