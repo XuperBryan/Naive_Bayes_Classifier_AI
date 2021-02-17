@@ -23,6 +23,8 @@ using namespace std;
 // diabete, 4.5 = .8734
 // diabete, 5.0 = .8741
 // diabete, 6.0 = .8719
+// copd, 1.5 = .8700
+// copd, 2.0 = .8702
 
 
 class NaiveBayes {
