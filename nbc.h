@@ -42,7 +42,7 @@ using namespace std;
 // renal, 4.0 = .8702
 // tobacco --
 // contact, 1.5 = .8708
-// contact, 1.5 = .8708
+// contact, 2.0 = .8705
 
 
 
