@@ -161,6 +161,7 @@ using namespace std;
 // tobacco0.5: .87760
 // tobacco1.25: .87755
 // tobacco1.5: .87763
+// tobacco1.75: .87763
 // tobacco2: .87753
 
 
