@@ -1,3 +1,3 @@
 #!/bin/bash
-g++ -o NaiveBayesClassifier naivebayesclassifier.cpp
+g++ -o NaiveBayesClassifier nbc.cpp
 ./NaiveBayesClassifier $1 $2
