@@ -28,6 +28,7 @@ using namespace std;
 // copd, 3.0 = .8700
 // copd, 4.0 = .8700
 // hyper, 1.5 = .8704
+// hyper, 2.0 = .8703
 
 
 class NaiveBayes {
