@@ -44,6 +44,7 @@ using namespace std;
 // contact, 1.5 = .8708
 // contact, 2.0 = .8705
 // contact, 3.0 = .8685
+// covres --
 
 
 
