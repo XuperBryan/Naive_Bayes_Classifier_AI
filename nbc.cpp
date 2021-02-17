@@ -598,16 +598,16 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     }
     
     
-    if(contact==1){
-        probDie+=log(dcontact1/dCount);
-        probLive+=log(acontact1/aCount);
-    } else if(contact==2){
-        probDie+=log(dcontact2/dCount);
-        probLive+=log(acontact2/aCount);
-    } else {
-        probDie+=log(dcontact3/dCount);
-        probLive+=log(acontact3/aCount);
-    }
+    // if(contact==1){
+    //     probDie+=log(dcontact1/dCount);
+    //     probLive+=log(acontact1/aCount);
+    // } else if(contact==2){
+    //     probDie+=log(dcontact2/dCount);
+    //     probLive+=log(acontact2/aCount);
+    // } else {
+    //     probDie+=log(dcontact3/dCount);
+    //     probLive+=log(acontact3/aCount);
+    // }
     
     if(covres==1){
         probDie+=log(dcovres1/dCount);
@@ -620,16 +620,16 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
         probLive+=log(acovres3/aCount);
     }
     
-    // if(icu==1){
-    //     probDie+=log(dicu1/dCount);
-    //     probLive+=log(aicu1/aCount);
-    // } else if(icu==2){
-    //     probDie+=log(dicu2/dCount);
-    //     probLive+=log(aicu2/aCount);
-    // } else {
-    //     probDie+=log(dicu3/dCount);
-    //     probLive+=log(aicu3/aCount);
-    // }
+    if(icu==1){
+        probDie+=log(dicu1/dCount);
+        probLive+=log(aicu1/aCount);
+    } else if(icu==2){
+        probDie+=log(dicu2/dCount);
+        probLive+=log(aicu2/aCount);
+    } else {
+        probDie+=log(dicu3/dCount);
+        probLive+=log(aicu3/aCount);
+    }
     
     // cout << "probDie = " << probDie << ",probLive = " << probLive << endl;
     if(probDie > probLive){
