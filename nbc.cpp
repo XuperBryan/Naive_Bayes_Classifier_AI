@@ -1,4 +1,4 @@
-#include "naivebayesclassifier.h"
+#include "nbc.h"
 
 void NaiveBayes::countAllVariables(string filename){
     ifstream myFile(filename);
@@ -899,6 +899,8 @@ void NaiveBayes::printInfo(){
 }
 
 int main(int argc, char* argv[]){
+    //clock_t t;
+    //t = clock();
     string trainingData = argv[1];
     string testingData = argv[2];
 
@@ -906,6 +908,8 @@ int main(int argc, char* argv[]){
     nb.countAllVariables(trainingData);
     //nb.printInfo();
     nb.printAllTestCases(testingData);
-    // nb.checkTestCases(testingData);
+    //nb.checkTestCases(testingData);
+    //t = clock() - t;
+    //cout << "time taken was: " << ((float)t)/CLOCKS_PER_SEC << endl;
     return 0;
 }
