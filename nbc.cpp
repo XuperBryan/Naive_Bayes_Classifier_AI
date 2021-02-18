@@ -776,12 +776,12 @@ double NaiveBayes::checkTestCases(string filename){
         }
     }
 
+    bool dead = true;
     double correct = 0;
     double total = 0;
     while(getline(myFile, line)){
         stringstream ss(line);
         int index = 0;
-        bool dead;
         int sex;
         int type;
         int tubed;
@@ -816,9 +816,9 @@ double NaiveBayes::checkTestCases(string filename){
                     break;
                 case 4:
                     if(value.compare("9999-99-99") == 0){
-                        bool dead = false;
+                        dead = false;
                     } else {
-                        bool dead = true;
+                        dead = true;
                     }
                     break;
                 case 5:
@@ -877,7 +877,7 @@ double NaiveBayes::checkTestCases(string filename){
             }
             index++;
         }
-        if(dead != willDie(sex, type, tubed, pneumon, age, preg, diabete, copd, asthma, inmsupr, hyper, other, cardio, obese, renal, tobacco, contact, covres, icu)){
+        if(dead == willDie(sex, type, tubed, pneumon, age, preg, diabete, copd, asthma, inmsupr, hyper, other, cardio, obese, renal, tobacco, contact, covres, icu)){
             correct++;
         }
         total++;
@@ -905,5 +905,6 @@ int main(int argc, char* argv[]){
     NaiveBayes nb = NaiveBayes();
     nb.countAllVariables(trainingData);
     nb.printAllTestCases(testingData);
+    //nb.checkTestCases(testingData);    
     return 0;
 }
