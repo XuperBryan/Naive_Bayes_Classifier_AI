@@ -204,6 +204,7 @@ using namespace std;
 
 // !hyper: .879333
 // hyper0.5: .878901
+// hyper1.5: .878622
 
 
 
