@@ -458,14 +458,14 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
     }
 
     if(pneumon==1){
-        probDie+=1.25*log(dpneumon1/dCount);
-        probLive+=1.25*log(apneumon1/aCount);
+        probDie+=1.75*log(dpneumon1/dCount);
+        probLive+=1.75*log(apneumon1/aCount);
     } else if(pneumon==2){
-        probDie+=1.25*log(dpneumon2/dCount);
-        probLive+=1.25*log(apneumon2/aCount);
+        probDie+=1.75*log(dpneumon2/dCount);
+        probLive+=1.75*log(apneumon2/aCount);
     } else {
-        probDie+=1.25*log(dpneumon3/dCount);
-        probLive+=1.25*log(apneumon3/aCount);
+        probDie+=1.75*log(dpneumon3/dCount);
+        probLive+=1.75*log(apneumon3/aCount);
     }
     
     if(age <= ageBound){
