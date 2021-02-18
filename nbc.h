@@ -223,7 +223,9 @@ using namespace std;
 // -preg: .879308
 // preg0.5: .879460
 // preg1.5: .878977
+// preg2: .879104
 
+// age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese1.5, renal0.5, tobacco1.5, covres3, pneumon1.5, !hyper, icu.75, !preg: .880044
 
 
 class NaiveBayes {
