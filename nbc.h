@@ -183,7 +183,10 @@ using namespace std;
 
 // age3, diabete3, !cardio, !copd, !asthma, contact2, sex0.25, !type, tubed2.2, inmsupr1.25, !other, obese1.5, renal0.5, tobacco1.5, covres3: .87813
 
-// !pneumon .8729
+// !pneumon: .8729
+// pneumon0.5: .878139  
+
+
 
 class NaiveBayes {
     public:
