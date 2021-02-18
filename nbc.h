@@ -197,7 +197,7 @@ using namespace std;
 // !preg: .878952
 // preg.5; .879028
 // preg1.5: .878927
-// preg2: .878927
+// preg2: .878723
 
 
 class NaiveBayes {
