@@ -457,16 +457,16 @@ bool NaiveBayes::willDie(int sex, int type, int tubed, int pneumon, int age, int
         probLive+=2.2*log(atubed3/aCount);
     }
 
-    if(pneumon==1){
-        probDie+=log(dpneumon1/dCount);
-        probLive+=log(apneumon1/aCount);
-    } else if(pneumon==2){
-        probDie+=log(dpneumon2/dCount);
-        probLive+=log(apneumon2/aCount);
-    } else {
-        probDie+=log(dpneumon3/dCount);
-        probLive+=log(apneumon3/aCount);
-    }
+    // if(pneumon==1){
+    //     probDie+=log(dpneumon1/dCount);
+    //     probLive+=log(apneumon1/aCount);
+    // } else if(pneumon==2){
+    //     probDie+=log(dpneumon2/dCount);
+    //     probLive+=log(apneumon2/aCount);
+    // } else {
+    //     probDie+=log(dpneumon3/dCount);
+    //     probLive+=log(apneumon3/aCount);
+    // }
     
     if(age <= ageBound){
         probDie+=3*log(dbelowAge/dCount);
@@ -899,17 +899,11 @@ void NaiveBayes::printInfo(){
 }
 
 int main(int argc, char* argv[]){
-    //clock_t t;
-    //t = clock();
     string trainingData = argv[1];
     string testingData = argv[2];
 
     NaiveBayes nb = NaiveBayes();
     nb.countAllVariables(trainingData);
-    //nb.printInfo();
     nb.printAllTestCases(testingData);
-    //nb.checkTestCases(testingData);
-    //t = clock() - t;
-    //cout << "time taken was: " << ((float)t)/CLOCKS_PER_SEC << endl;
     return 0;
 }
